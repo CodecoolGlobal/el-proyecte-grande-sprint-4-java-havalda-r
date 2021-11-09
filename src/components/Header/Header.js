@@ -13,6 +13,9 @@ const Header = () => {
       <Link to='/promotions'>
         <div>PROMOTIONS</div>
       </Link>
+      <Link to='/builder'>
+        <div>MAKE IT JAVA</div>
+      </Link>
       <div>LOGIN</div>
     </header>
   );
