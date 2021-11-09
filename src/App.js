@@ -16,7 +16,7 @@ function App() {
           }
         />
         <Route
-          path='/menu'
+          path='/promotions'
           exact
           element={
             <div>
