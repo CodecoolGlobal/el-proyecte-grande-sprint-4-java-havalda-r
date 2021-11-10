@@ -1,7 +1,21 @@
 .Header {
   background-color: rgba(27, 27, 27, 0.95);
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.container {
   display: flex;
   justify-content: space-around;
-  height: 50px;
+}
+
+.left {
+  width: 600px;
+}
+
+.right {
+  width: 300px;
 }
