@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import Menu from './components/Menu/Menu';
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
+import Builder from './components/Builder/Builder';
 
 function App() {
   const [cart, setCart] = useState(null);
@@ -12,7 +13,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/builder' exact element={<Home />} />
+        <Route path='/builder' exact element={<Builder />} />
         <Route path='/menu' exact element={<Menu />} />
         <Route path='/menu/meals' exact element={<h1>MEALS</h1>} />
         <Route
