@@ -6,7 +6,7 @@ const Controller = (props) => {
   const controls = [{ label: 'Salad', type: 'salad' }];
 
   return (
-    <div classname={styles.Controller}>
+    <div className={styles.Controller}>
       {controls.map((ctrl) => (
         <ControllerItem
           key={ctrl.label}
