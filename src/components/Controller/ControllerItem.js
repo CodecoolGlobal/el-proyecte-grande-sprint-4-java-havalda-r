@@ -6,7 +6,7 @@ const ControllerItem = (props) => {
     <div className={styles.ControllerItem}>
       <button>LESS</button>
       <div>{props.label}</div>
-      <button>MORE</button>
+      <button onClick={props.added}>MORE</button>
     </div>
   );
 };
