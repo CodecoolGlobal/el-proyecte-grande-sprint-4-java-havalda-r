@@ -60,3 +60,12 @@ button:hover {
   background-color: rgb(44, 197, 57);
   color: white;
 }
+
+.secondaryButton {
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: black;
+}

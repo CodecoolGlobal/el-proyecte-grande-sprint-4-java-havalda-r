@@ -21,6 +21,7 @@ function App() {
         <Route path='/menu/side-dishes' exact element={<h1>SIDE-DISHES</h1>} />
         <Route path='/menu/salads' exact element={<h1>SALADS</h1>} />
         <Route path='/menu/accessories' exact element={<h1>ACCESSORIES</h1>} />
+        <Route path='/cart' exact element={<h1>CART</h1>} />
         <Route
           path='/promotions'
           exact

@@ -23,7 +23,9 @@ const Header = () => {
         </Link>
       </div>
       <div className={[styles.container, styles.right].join(' ')}>
-        <div>CART</div>
+        <Link to='/cart'>
+          <button className={styles.secondaryButton}>CART</button>
+        </Link>
         <div>LOGIN</div>
       </div>
     </header>
