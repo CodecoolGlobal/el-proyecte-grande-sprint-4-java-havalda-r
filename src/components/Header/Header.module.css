@@ -4,12 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .left {
@@ -18,4 +19,18 @@
 
 .right {
   width: 300px;
+}
+
+.logo {
+  height: 42px;
+  border-radius: 5px;
+  border: 3px solid rgb(102, 226, 77);
+  filter: brightness(70%);
+  transition: all 0.4s;
+}
+
+.logo:hover {
+  border: 3px solid rgb(102, 226, 77);
+  filter: brightness(100%);
+  transition: all 0.2s;
 }
