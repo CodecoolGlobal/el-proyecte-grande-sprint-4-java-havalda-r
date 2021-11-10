@@ -14,6 +14,10 @@
 }
 
 .left {
+  margin: 10px;
+}
+.center {
+  justify-content: space-around;
   width: 600px;
 }
 
@@ -22,15 +26,37 @@
 }
 
 .logo {
-  height: 42px;
+  height: 36px;
   border-radius: 5px;
-  border: 3px solid rgb(102, 226, 77);
+  border: 2px solid rgb(102, 226, 77);
   filter: brightness(70%);
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .logo:hover {
-  border: 3px solid rgb(102, 226, 77);
+  border: 2px solid rgb(102, 226, 77);
   filter: brightness(100%);
   transition: all 0.2s;
+}
+
+button {
+  max-height: 50px;
+  background-color: rgba(255, 255, 255, 0); /* Green */
+  border: 2px solid #28b42c;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #28b42c;
+  color: white;
 }

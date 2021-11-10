@@ -8,16 +8,18 @@ const Header = () => {
     <header className={styles.Header}>
       <div className={[styles.container, styles.left].join(' ')}>
         <Link to='/'>
-          <img src={Logo} alt='Logo' className={styles.logo} />;
+          <img src={Logo} alt='Logo' className={styles.logo} />
         </Link>
+      </div>
+      <div className={[styles.container, styles.left].join(' ')}>
         <Link to='/menu'>
-          <div>MENU</div>
+          <button>MENU</button>
         </Link>
         <Link to='/promotions'>
-          <div>PROMOTIONS</div>
+          <button>PROMOTIONS</button>
         </Link>
         <Link to='/builder'>
-          <div>MAKE IT JAVA</div>
+          <button>MAKE IT JAVA</button>
         </Link>
       </div>
       <div className={[styles.container, styles.right].join(' ')}>
