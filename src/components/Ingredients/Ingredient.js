@@ -10,6 +10,9 @@ const Ingredient = (props) => {
     case 'bread-top':
       ingredient = <div className={styles.BunTop}></div>;
       break;
+    case 'salad':
+      ingredient = <div className={styles.Salad}></div>;
+      break;
     default:
       ingredient = null;
   }
