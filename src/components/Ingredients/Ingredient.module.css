@@ -1,0 +1,14 @@
+.BunBottom {
+  height: 13%;
+  width: 80%;
+  background: #bc581e;
+  margin: 2% auto;
+}
+
+.BunTop {
+  height: 20%;
+  width: 80%;
+  background: #bc581e;
+  margin: 2% auto;
+  position: relative;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Sandwich from '../Sandwich/Sandwich';
 import styles from './Builder.module.css';
 
 const Builder = () => {
@@ -7,7 +8,7 @@ const Builder = () => {
       <h1>BUILDER</h1>
       <div className={styles.container}>
         <div className={styles.control}>CONTROLS</div>
-        <div className={styles.sandwich}>SANDWICH</div>
+        <Sandwich />
       </div>
       <h2>TOTAL PRICE</h2>
     </div>
