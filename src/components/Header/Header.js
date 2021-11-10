@@ -11,7 +11,7 @@ const Header = () => {
           <img src={Logo} alt='Logo' className={styles.logo} />
         </Link>
       </div>
-      <div className={[styles.container, styles.left].join(' ')}>
+      <div className={[styles.container, styles.center].join(' ')}>
         <Link to='/menu'>
           <button>MENU</button>
         </Link>
