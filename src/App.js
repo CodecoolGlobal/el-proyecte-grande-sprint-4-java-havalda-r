@@ -2,12 +2,13 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Menu from './components/Menu/Menu';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/builder' exact element={<h1>BUILDER</h1>} />
+        <Route path='/builder' exact element={<Home />} />
         <Route path='/menu' exact element={<Menu />} />
         <Route path='/menu/meals' exact element={<h1>MEALS</h1>} />
         <Route
@@ -29,15 +30,7 @@ function App() {
             </div>
           }
         />
-        <Route
-          path='/'
-          exact
-          element={
-            <div>
-              <h1>Home page</h1>
-            </div>
-          }
-        />
+        <Route path='/' exact element={<Home />} />
       </Routes>
     </Layout>
   );
