@@ -4,7 +4,9 @@ import Sandwich from '../Sandwich/Sandwich';
 import styles from './Builder.module.css';
 
 const Builder = () => {
-  const [ingredients, setIngredients] = useState({ ingredients: { salad: 0 } });
+  const [ingredients, setIngredients] = useState({
+    ingredients: { jalapeno: 0, salad: 0, cheese: 0, meat: 0 },
+  });
 
   const addIngredientHandler = (type) => {
     const previousCount = ingredients.ingredients[type];

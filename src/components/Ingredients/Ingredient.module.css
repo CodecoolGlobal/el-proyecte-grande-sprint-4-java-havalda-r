@@ -4,7 +4,7 @@
   background-image: url('../../assets/images/bun_bottom.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 1% auto;
+  margin: 3px auto;
 }
 
 .BunTop {
@@ -14,14 +14,23 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-  margin: 1% auto;
+  margin: 3px auto;
 }
 
 .Salad {
   height: 5%;
-  width: 75%;
+  width: 80%;
   background-image: url('../../assets/images/salad.png');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 1% auto;
+  margin: 3px auto;
+}
+
+.Jalapeno {
+  height: 5%;
+  width: 75%;
+  background-image: url('../../assets/images/jalapeno_slices.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
 }

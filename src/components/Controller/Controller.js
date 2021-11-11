@@ -4,10 +4,10 @@ import ControllerItem from './ControllerItem';
 
 const Controller = (props) => {
   const controls = [
+    { label: 'Jalapeno', type: 'jalapeno' },
     { label: 'Salad', type: 'salad' },
-    { label: 'Jalapeno', type: 'salad' },
-    { label: 'Cheese', type: 'salad' },
-    { label: 'Meat', type: 'salad' },
+    { label: 'Cheese', type: 'cheese' },
+    { label: 'Meat', type: 'meat' },
   ];
 
   return (
