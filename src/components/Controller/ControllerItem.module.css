@@ -1,6 +1,10 @@
 .ControllerItem {
   display: flex;
-  justify-content: space-between;
+  width: 50%;
   align-items: center;
-  margin: 5px 0;
+  margin-left: 20%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

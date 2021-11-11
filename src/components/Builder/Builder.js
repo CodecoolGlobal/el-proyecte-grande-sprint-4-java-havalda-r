@@ -36,7 +36,6 @@ const Builder = () => {
           />
           <Sandwich ingredients={ingredients.ingredients} />
         </div>
-        <h2>TOTAL PRICE</h2>
       </div>
     </>
   );

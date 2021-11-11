@@ -4,9 +4,11 @@ import styles from './ControllerItem.module.css';
 const ControllerItem = (props) => {
   return (
     <div className={styles.ControllerItem}>
-      <button onClick={props.remove}>-</button>
-      <div>{props.label}</div>
-      <button onClick={props.added}>+</button>
+      <div>{props.label}: </div>
+      <div>
+        <button onClick={props.remove}>-</button>
+        <button onClick={props.added}>+</button>
+      </div>
     </div>
   );
 };

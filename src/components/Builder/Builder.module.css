@@ -1,7 +1,7 @@
 .Builder {
   width: 98%;
   margin: 20px auto;
-  height: 850px;
+  height: 720px;
   border: 2px solid rgb(44, 197, 57);
   background-color: rgba(0, 0, 0, 0.815);
   border-radius: 15px;
@@ -10,7 +10,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 h2 {
