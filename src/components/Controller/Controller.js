@@ -22,7 +22,7 @@ const Controller = (props) => {
           remove={() => props.remove(ctrl.type)}
         />
       ))}
-      <h2>Total price:</h2>
+      <h2>Total price: {props.totalPrice} HUF</h2>
     </div>
   );
 };
