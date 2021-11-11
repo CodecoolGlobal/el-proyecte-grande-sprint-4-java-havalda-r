@@ -34,3 +34,12 @@
   background-size: 100% 100%;
   margin: 3px auto;
 }
+
+.Cheese {
+  height: 7%;
+  width: 95%;
+  background-image: url('../../assets/images/cheese.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
+}
