@@ -12,6 +12,7 @@ const Controller = (props) => {
           key={ctrl.label}
           label={ctrl.label}
           added={() => props.add(ctrl.type)}
+          remove={() => props.remove(ctrl.type)}
         />
       ))}
     </div>

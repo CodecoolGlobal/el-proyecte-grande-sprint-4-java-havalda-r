@@ -14,11 +14,25 @@ const Builder = () => {
     setIngredients(updatedIngredients);
   };
 
+  const removeIngredientHandler = (type) => {
+    const previousCount = ingredients.ingredients[type];
+    if (previousCount <= 0) {
+      return;
+    }
+    const updatedCount = previousCount - 1;
+    const updatedIngredients = { ...ingredients };
+    updatedIngredients.ingredients[type] = updatedCount;
+    setIngredients(updatedIngredients);
+  };
+
   return (
     <div className={styles.Builder}>
       <h1>BUILDER</h1>
       <div className={styles.container}>
-        <Controller add={addIngredientHandler} />
+        <Controller
+          add={addIngredientHandler}
+          remove={removeIngredientHandler}
+        />
         <Sandwich ingredients={ingredients.ingredients} />
       </div>
       <h2>TOTAL PRICE</h2>
