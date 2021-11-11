@@ -1,0 +1,71 @@
+.Header {
+  background-color: rgba(27, 27, 27, 0.95);
+  border-bottom: 3px solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  margin: 10px;
+}
+.center {
+  justify-content: space-around;
+  width: 600px;
+}
+
+.right {
+  width: 300px;
+}
+
+.logo {
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid rgb(44, 197, 57);
+  filter: brightness(70%);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  border: 2px solid rgb(44, 197, 57);
+  filter: brightness(100%);
+  transition: all 0.2s;
+}
+
+button {
+  max-height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(44, 197, 57);
+  border-radius: 5px;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(44, 197, 57);
+  color: white;
+}
+
+.secondaryButton {
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: black;
+}

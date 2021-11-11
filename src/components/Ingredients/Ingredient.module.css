@@ -1,0 +1,54 @@
+.BunBottom {
+  height: 15%;
+  width: 80%;
+  background-image: url('../../assets/images/bun_bottom.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
+}
+
+.BunTop {
+  height: 30%;
+  width: 80%;
+  background-image: url('../../assets/images/bun_top.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin: 3px auto;
+}
+
+.Salad {
+  height: 5%;
+  width: 80%;
+  background-image: url('../../assets/images/salad.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3px auto;
+}
+
+.Jalapeno {
+  height: 5%;
+  width: 75%;
+  background-image: url('../../assets/images/jalapeno_slices.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
+}
+
+.Cheese {
+  height: 7%;
+  width: 95%;
+  background-image: url('../../assets/images/cheese.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
+}
+
+.Meat {
+  height: 20%;
+  width: 75%;
+  background-image: url('../../assets/images/meat.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto;
+}
