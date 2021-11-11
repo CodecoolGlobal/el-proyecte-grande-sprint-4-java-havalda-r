@@ -1,21 +1,27 @@
 .BunBottom {
-  height: 13%;
+  height: 15%;
   width: 80%;
-  background: #bc581e;
-  margin: 2% auto;
+  background-image: url('../../assets/images/bun_bottom.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 1% auto;
 }
 
 .BunTop {
-  height: 20%;
+  height: 30%;
   width: 80%;
-  background: #bc581e;
-  margin: 2% auto;
+  background-image: url('../../assets/images/bun_top.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: relative;
+  margin: 1% auto;
 }
 
 .Salad {
   height: 5%;
   width: 75%;
-  background: green;
-  margin: 2% auto;
+  background-image: url('../../assets/images/salad.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1% auto;
 }

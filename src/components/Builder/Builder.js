@@ -26,17 +26,19 @@ const Builder = () => {
   };
 
   return (
-    <div className={styles.Builder}>
-      <h1>BUILDER</h1>
-      <div className={styles.container}>
-        <Controller
-          add={addIngredientHandler}
-          remove={removeIngredientHandler}
-        />
-        <Sandwich ingredients={ingredients.ingredients} />
+    <>
+      <div className={styles.Builder}>
+        <h1>BUILDER</h1>
+        <div className={styles.container}>
+          <Controller
+            add={addIngredientHandler}
+            remove={removeIngredientHandler}
+          />
+          <Sandwich ingredients={ingredients.ingredients} />
+        </div>
+        <h2>TOTAL PRICE</h2>
       </div>
-      <h2>TOTAL PRICE</h2>
-    </div>
+    </>
   );
 };
 

@@ -11,10 +11,13 @@ const Sandwich = (props) => {
 
   return (
     <div className={styles.Sandwich}>
-      <Ingredient type='bread-top' />
-      {transformedIngredients}
+      <h2>Your sandwich is going to be like:</h2>
+      <div className={styles.container}>
+        <Ingredient type='bread-top' />
+        {transformedIngredients}
 
-      <Ingredient type='bread-bottom' />
+        <Ingredient type='bread-bottom' />
+      </div>
     </div>
   );
 };
