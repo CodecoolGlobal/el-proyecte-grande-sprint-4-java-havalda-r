@@ -15,7 +15,6 @@ const Sandwich = (props) => {
       <div className={styles.container}>
         <Ingredient type='bread-top' />
         {transformedIngredients}
-
         <Ingredient type='bread-bottom' />
       </div>
     </div>
