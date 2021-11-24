@@ -14,6 +14,7 @@ const Cart = (props) => {
     (sum, listItem) => sum + listItem.totalPrice,
     0
   );
+  const FREE_SHIPPING = 10000;
 
   const sandwichCount = cart.length;
 
@@ -25,9 +26,14 @@ const Cart = (props) => {
           <h1>You are going to order:</h1>
           <div className={styles.cardContainer}>{cartItems}</div>
           <p className={styles.order}>
-            You are going to buy <span>{sandwichCount}</span> sandwiches for
-            just only
+            You are going to buy <span>{sandwichCount}</span> delicious
+            sandwiches and it's only
             <span> {sumTotalPrices}</span> HUF!
+          </p>
+          <p>
+            If you order for {FREE_SHIPPING - sumTotalPrices} HUF more, you'll
+            get
+            <span> FREE SHIPPING!</span>
           </p>
         </div>
       ) : (
