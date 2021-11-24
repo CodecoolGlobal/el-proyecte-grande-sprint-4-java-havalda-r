@@ -22,7 +22,10 @@ const Controller = (props) => {
           remove={() => props.remove(ctrl.type)}
         />
       ))}
-      <h2>Total price: {props.totalPrice} HUF</h2>
+      <div className={styles.center}>
+        <h2>Total price: {props.totalPrice} HUF</h2>
+        <button onClick={props.openModal}>I want that!</button>
+      </div>
     </div>
   );
 };
