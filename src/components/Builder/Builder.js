@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Controller from '../Controller/Controller';
 import Sandwich from '../Sandwich/Sandwich';
 import styles from './Builder.module.css';
 import Modal from 'react-modal';
+import { CartContext } from '../Cart/CartContext';
 
 const INGREDIENT_PRICES = {
   salad: 100,
@@ -11,7 +12,9 @@ const INGREDIENT_PRICES = {
   jalapeno: 100,
 };
 
-const Builder = () => {
+const Builder = (props) => {
+  const { cart, setCart } = useContext(CartContext);
+
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const [ingredients, setIngredients] = useState({
@@ -70,6 +73,7 @@ const Builder = () => {
 
   function purchase() {
     alert('Burger is in your cart!');
+    setCart([...cart, ingredients.ingredients]);
     setIsOpen(false);
   }
 

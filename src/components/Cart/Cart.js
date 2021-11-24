@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Cart.module.css';
+import { CartContext } from './CartContext';
+import CartCard from '../CartCard/CartCard';
 
 const Cart = (props) => {
+  const { cart, setCart } = useContext(CartContext);
+  const cartItems = cart.map((sandwich, index) => (
+    <CartCard key={index} sw={sandwich}></CartCard>
+  ));
+
   return (
     <div className={styles.Cart}>
-      {props.cart ? (
-        <h1>You ordered something</h1>
+      {cart.length > 0 ? (
+        <div>
+          <h1>You are going to order:</h1>
+          <div className={styles.cardContainer}>{cartItems}</div>
+        </div>
       ) : (
         <h1>Your cart is empty!</h1>
       )}

@@ -1,0 +1,15 @@
+.CartCard {
+  border: 3px solid white;
+  width: 400px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 30px;
+  padding: 15px;
+  transition: all 1s;
+}
+
+.CartCard:hover {
+  border: 3px solid rgb(0, 92, 5);
+  background-color: rgba(2, 46, 2, 0.8);
+  transition: all 1s;
+}

@@ -5,4 +5,12 @@
   border: 2px solid rgb(44, 197, 57);
   background-color: rgba(0, 0, 0, 0.815);
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
