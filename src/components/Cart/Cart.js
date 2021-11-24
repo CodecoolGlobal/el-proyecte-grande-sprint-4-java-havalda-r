@@ -21,10 +21,10 @@ const Cart = (props) => {
   return (
     <div className={styles.Cart}>
       {cart.length > 0 ? (
-        <div>
+        <div style={{ textAlign: 'center' }}>
           <h1>You are going to order:</h1>
           <div className={styles.cardContainer}>{cartItems}</div>
-          <p>
+          <p className={styles.order}>
             You are going to buy <span>{sandwichCount}</span> sandwiches for
             just only
             <span> {sumTotalPrices}</span> HUF!
