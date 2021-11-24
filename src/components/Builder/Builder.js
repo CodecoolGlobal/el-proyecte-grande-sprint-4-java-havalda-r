@@ -73,7 +73,10 @@ const Builder = (props) => {
 
   function purchase() {
     alert('Burger is in your cart!');
-    setCart([...cart, ingredients.ingredients]);
+    setCart([
+      ...cart,
+      { ingredients: ingredients.ingredients, totalPrice: totalPrice },
+    ]);
     setIsOpen(false);
   }
 

@@ -13,3 +13,8 @@
   background-color: rgba(2, 46, 2, 0.8);
   transition: all 1s;
 }
+
+.CartCard h2,
+h3 {
+  text-align: center;
+}

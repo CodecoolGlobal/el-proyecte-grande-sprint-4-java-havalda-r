@@ -8,7 +8,7 @@ const Cart = (props) => {
   const cartItems = cart.map((sandwich, index) => (
     <CartCard key={index} sw={sandwich}></CartCard>
   ));
-
+  console.log(cart);
   return (
     <div className={styles.Cart}>
       {cart.length > 0 ? (
