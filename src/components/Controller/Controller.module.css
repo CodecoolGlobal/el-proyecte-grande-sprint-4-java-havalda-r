@@ -16,12 +16,6 @@
   justify-content: center;
 }
 
-.Controller h1,
-h2 {
-  width: 100%;
-  text-align: center;
-}
-
 .center {
   width: 100%;
   display: flex;

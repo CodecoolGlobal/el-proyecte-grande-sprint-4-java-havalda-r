@@ -12,7 +12,7 @@ const Controller = (props) => {
 
   return (
     <div className={styles.Controller}>
-      <h1>Secret recipe</h1>
+      <h1 style={{ textAlign: 'center', width: '100%' }}>Secret recipe</h1>
 
       {controls.map((ctrl) => (
         <ControllerItem
