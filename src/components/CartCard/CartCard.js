@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './CartCard.module.css';
 
+const SANDWICH_ADJECTIVES = ['', 'juicy', 'fresh', 'delicious', 'great'];
+const SANDWICH_SYNONYMS = ['sandwich', 'burger'];
+
 const SALAD_ADJECTIVES = [
   'bitter leafy',
   'fine',
@@ -24,7 +27,10 @@ const CartCard = (props) => {
 
   return (
     <div className={styles.CartCard}>
-      <h2>A sandwich with:</h2>
+      <h2>
+        A {randomAdjective(SANDWICH_ADJECTIVES)}{' '}
+        {randomAdjective(SANDWICH_SYNONYMS)} with:
+      </h2>
       <ul>
         {props.sw.ingredients.jalapeno > 0 ? (
           <li>
@@ -47,7 +53,7 @@ const CartCard = (props) => {
         {props.sw.ingredients.meat > 0 ? (
           <li>
             {props.sw.ingredients.meat} cuts of the{' '}
-            {randomAdjective(GENERAL_ADJECTIVES)} angus beef hamburger
+            {randomAdjective(GENERAL_ADJECTIVES)} angus beef hamburger patty
           </li>
         ) : null}
       </ul>
