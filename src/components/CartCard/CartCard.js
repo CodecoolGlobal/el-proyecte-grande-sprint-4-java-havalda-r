@@ -1,25 +1,53 @@
 import React from 'react';
 import styles from './CartCard.module.css';
 
+const SALAD_ADJECTIVES = [
+  'bitter leafy',
+  'fine',
+  'extremely nutritive',
+  'our crunchy',
+];
+
+const JALAPENO_ADJECTIVES = ['extra hot', 'piquant', 'spicy', 'peppery'];
+
+const GENERAL_ADJECTIVES = [
+  'tastiest',
+  'most delicious',
+  'most savory',
+  'most flavorful',
+];
+
 const CartCard = (props) => {
+  function randomAdjective(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
   return (
     <div className={styles.CartCard}>
       <h2>A sandwich with:</h2>
       <ul>
         {props.sw.ingredients.jalapeno > 0 ? (
           <li>
-            {props.sw.ingredients.jalapeno} portion of extra spicy jalapeno
+            {props.sw.ingredients.jalapeno} portion of{' '}
+            {randomAdjective(JALAPENO_ADJECTIVES)} jalapeno
           </li>
         ) : null}
         {props.sw.ingredients.salad > 0 ? (
-          <li>{props.sw.ingredients.salad} chunks of fresh salad</li>
+          <li>
+            {props.sw.ingredients.salad} chunks of{' '}
+            {randomAdjective(SALAD_ADJECTIVES)} salad
+          </li>
         ) : null}
         {props.sw.ingredients.cheese > 0 ? (
-          <li>{props.sw.ingredients.cheese} slices of cheddar</li>
+          <li>
+            {props.sw.ingredients.cheese} slices of the{' '}
+            {randomAdjective(GENERAL_ADJECTIVES)} cheddar
+          </li>
         ) : null}
         {props.sw.ingredients.meat > 0 ? (
           <li>
-            {props.sw.ingredients.meat} cuts of the finest angus beef hamburger
+            {props.sw.ingredients.meat} cuts of the{' '}
+            {randomAdjective(GENERAL_ADJECTIVES)} angus beef hamburger
           </li>
         ) : null}
       </ul>
