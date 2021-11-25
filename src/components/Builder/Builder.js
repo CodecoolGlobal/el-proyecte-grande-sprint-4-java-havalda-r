@@ -4,6 +4,7 @@ import Sandwich from '../Sandwich/Sandwich';
 import styles from './Builder.module.css';
 import Modal from 'react-modal';
 import { CartContext } from '../Cart/CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const INGREDIENT_PRICES = {
   salad: 100,
@@ -14,6 +15,8 @@ const INGREDIENT_PRICES = {
 
 const Builder = (props) => {
   const { cart, setCart } = useContext(CartContext);
+
+  const redirect = useNavigate();
 
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -34,10 +37,6 @@ const Builder = (props) => {
 
   function openModal() {
     setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
   }
 
   function closeModal() {
@@ -78,6 +77,7 @@ const Builder = (props) => {
       { ingredients: ingredients.ingredients, totalPrice: totalPrice },
     ]);
     setIsOpen(false);
+    redirect('/cart');
   }
 
   return (
